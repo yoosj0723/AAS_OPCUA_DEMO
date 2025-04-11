@@ -4,12 +4,18 @@ import random
 from opcua import Server, ua
 
 # AAS JSON 로드
-with open("./writeAASAAS_test1.json", "r") as f:
+with open("./writeAAS/AAS_test1.json", "r") as f:
     aas_data = json.load(f)
+    
+# ip.txt: OPC UA Server의 ip 주소
+ip_file_path = "C:/Users/rund6/OneDrive/바탕 화면/ip.txt"
+
+with open(ip_file_path, "r") as file:
+    ip_address = file.readline().strip()
 
 # OPC UA 서버 설정
 server = Server()
-url = "opc.tcp://0.0.0.0:4840"
+url = f"opc.tcp://{ip_address}:4840"
 server.set_endpoint(url)
 
 name = "OPCUA_SERVER_AAS_FULL"
@@ -23,10 +29,12 @@ aas_node = objects.add_object(test_namespace, test_aas_id)
 
 # AAS 전체 등록
 submodel_dict = {}
+temp_var = None
+
 for submodel in aas_data["submodels"]:
     submodel_id = submodel["id"]
     submodel_node = aas_node.add_object(test_namespace, submodel_id)
-    submodel_dict = {submodel_id} = submodel_node
+    submodel_dict[submodel_id] = submodel_node
     
     for element in submodel.get("submodelElements", []):
         id_short = element.get("idShort", "unknown")
