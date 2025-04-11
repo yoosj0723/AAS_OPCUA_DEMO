@@ -23,7 +23,7 @@ test_namespace = server.register_namespace(name)
 
 objects = server.get_objects_node()
 
-# AAS 루트 노드 생성
+# AAS 루트노드 생성
 test_aas_id = aas_data["assetAdministrationShells"][0]["id"]
 aas_node = objects.add_object(test_namespace, test_aas_id)
 
@@ -61,7 +61,7 @@ for submodel in aas_data["submodels"]:
 
 # 서버 시작
 server.start()
-print("🚀 OPC UA AAS Server Started")
+print("OPC UA AAS Server Started")
 
 try:
     while True:
@@ -69,7 +69,7 @@ try:
         if temp_var:
             new_temp = random.randint(20, 30)
             temp_var.set_value(new_temp)
-            print(f"🔥 Updated temp: {new_temp}")
+            print(f"Updated temp: {new_temp}")
         time.sleep(2)
 except KeyboardInterrupt:
     print("🛑 서버 종료 중...")
