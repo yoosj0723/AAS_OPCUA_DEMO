@@ -74,6 +74,7 @@ pip install opcua
 ```bash
 python server_plc_single_extension.py
 ```
+![실행 화면](./img\server.png)
 
 ### 2. 클라이언트 실행 (`client_EG_single.py`)
 
@@ -84,6 +85,7 @@ python server_plc_single_extension.py
 ```bash
 python client_EG_single.py
 ```
+![실행 화면](./img\client.png)
 
 
 ## 구조 요약
