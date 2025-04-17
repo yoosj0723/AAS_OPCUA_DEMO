@@ -106,7 +106,6 @@ project_demo/
 - [ ] OPC UA Aggregation Server 연동
 - [ ] TSDB 저장 (ex. Machbase)
 - [ ] 클라우드 모니터링용 OPC UA Client 구현
-- [ ] AAS submodel 전체 연동 자동화
 
 ---
 
