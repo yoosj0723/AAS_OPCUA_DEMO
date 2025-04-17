@@ -80,7 +80,7 @@ python server_plc_single_extension.py
 
 - 위치: `project_demo/client_EG_single.py`
 - 동작:
-  - Server_PLC로부터 `temp` 값을 주기적으로 읽어 출력
+  - Server_PLC로부터 `temp` 값을 5번 주기적으로 읽고 출력
 
 ```bash
 python client_EG_single.py
