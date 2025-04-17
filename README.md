@@ -25,7 +25,7 @@ PLC (시뮬레이션) → Server_PLC (OPC UA Server) → Client_EG (OPC UA Clien
 AssetAdministrationShell (id: test1)
 ├── assetInformation
 │   └── globalAssetId: "Test_BOT"
-├── submodels
+└── submodels
     ├── Identification
     ├── TechnicalData
     ├── OperationData
