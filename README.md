@@ -26,14 +26,14 @@ AssetAdministrationShell (id: test1)
 ├── assetInformation
 │   └── globalAssetId: "Test_BOT"
 ├── submodels
-│   ├── Identification
-│   ├── TechnicalData
-│   ├── OperationData
-│   │   └── temp (Property)
-│   │       ├── valueType: xs:int
-│   │       ├── value: 0 (초기값)
-│   │       └── semanticId: Properties/temp
-└── Documentation
+    ├── Identification
+    ├── TechnicalData
+    ├── OperationData
+    │   └── temp (Property)
+    │       ├── valueType: xs:int
+    │       ├── value: 0 (초기값)
+    │       └── semanticId: Properties/temp
+    └── Documentation
 ```
 
 ### 2. OPC UA 서버 노드 구조
