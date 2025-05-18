@@ -1,7 +1,7 @@
 
 # AAS + OPC UA 기반 DT 데모 (Server_PLC → Client_EG)
 
-이 프로젝트는 **OPC UA**를 이용하여 **PLC 시뮬레이션 서버(Server_PLC)**에서 **엣지 게이트웨이(Client_EG)**로 AAS 데이터를 전송하는 **디지털 트윈(Digital Twin)** 데모입니다.
+이 프로젝트는 **OPC UA**를 이용하여 PLC 시뮬레이션 서버(Server_PLC)에서 엣지 게이트웨이(Client_EG)로 AAS 데이터를 전송하는 **디지털 트윈(Digital Twin)** 데모입니다.
 
 ---
 
