@@ -55,7 +55,7 @@ Objects
 ## 환경 설치
 
 ```bash
-pip install opcua
+pip install opcua basyx-python-sdk
 ```
 
 ---
